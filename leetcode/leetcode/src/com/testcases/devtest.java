@@ -94,7 +94,6 @@ public class devtest {
         return count;
     }
     public static void main(String[] args) {
-        System.out.print(new devtest().process("1x1\n" +
-                "0,0\n"));
+        System.out.print(new devtest().process("3x4\n0,0\n1,3\n2,2\n"));
     }
 }
