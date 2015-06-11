@@ -13,24 +13,31 @@ public class continuousSubarraySum {
     public ArrayList<Integer> continuousSubarraySum(int[] A) {
         // Write your code asdfheredfasdf
         ArrayList<Integer> a = new ArrayList<Integer>();
-        a.add(A[0]);
-        int max = A[0], subans = A[0], a1 = 0, a2 = 0, ta1 = 0;
-        for (int i = 1; i < A.length; i ++) {
-            if (A[i] > a.get(i-1) + A[i]) {
-                if (a.get(i-1) > max) {
-                    max = a.get(i-1);
-                    a2 = i - 1;
-                    a1 = ta1;
-                    ta1 = i;
+        int i = 0, j = 1, n = A.length;
+        int a1 = 0, a2 = 0, max = A[0], sum = A[0];
+        while (j < n) {
+            if (A[j] > A[j] + sum) {
+                if (sum > max) {
+                    max = sum;
+                    a1 = i;
+                    a2 = j-1;
                 }
+                sum = A[j];
+                i = j;
+                j++;
             } else {
-
+                sum += A[j];
+                if (sum > max) {
+                    max = sum;
+                    a1 = i;
+                    a2 = j;
+                }
+                j++;
             }
-
         }
         ArrayList<Integer> ans = new ArrayList<Integer>();
-        ans.add(a1);
-        ans.add(a2);
+        ans.add(A[a1]);
+        ans.add(A[a2]);
         return ans;
     }
 

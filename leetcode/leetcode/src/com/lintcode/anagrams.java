@@ -21,10 +21,8 @@ public class anagrams {
         int s = 0;
         List<String> ans = new ArrayList<String>();
         boolean flag = true;
-        while (str.size() > 0) {
-            if (str.size() == 1) {
-                flag = true;
-            }
+        while (n > 0 && str.size() > 0) {
+            flag = true;
             for (int i = 1; i < str.size(); i++) {
                 if (anagram(str.get(i),str.get(0))) {
                     ans.add(str.get(i));
@@ -41,9 +39,15 @@ public class anagrams {
                         ans.add(str.get(0));
                         str.remove(0);
                         break;
+                    } else if (i == ans.size() -1) {
+                        str.remove(0);
                     }
                 }
+                if (ans.size() == 0) {
+                    str.remove(0);
+                }
             }
+            n--;
         }
         return ans;
     }
@@ -67,7 +71,7 @@ public class anagrams {
     }
 
     public static void main(String[] args) {
-        String[] str = {"tea","and","ate","eat","den"};
+        String[] str = {"ray","cod","abe","ned","arc","jar","owl","pop","paw","sky","yup","fed","jul","woo","ado","why","ben","mys","den","dem","fat","you","eon","sui","oct","asp","ago","lea","sow","hus","fee","yup","eve","red","flo","ids","tic","pup","hag","ito","zoo"};
         List<String> a = new anagrams().anagrams(str);
         System.out.print(a);
     }
