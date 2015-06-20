@@ -5,6 +5,8 @@ package com.testcases;
  */
 public class test {
     public static void main(String[] args) {
-        System.out.print(Integer.toBinaryString(-1));
+        String s = "asdf*asdf";
+        String[] ss = s.split((char)42 + "");
+        System.out.print(ss[0]);
     }
 }
