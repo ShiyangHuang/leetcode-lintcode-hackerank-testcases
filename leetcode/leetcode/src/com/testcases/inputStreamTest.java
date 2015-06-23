@@ -12,7 +12,7 @@ public class inputStreamTest {
         while (true) {
             BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
             try {
-                System.out.println(in.readLine());
+                System.out.println(in.read());
             } catch (IOException e) {
                 e.printStackTrace();
             }
