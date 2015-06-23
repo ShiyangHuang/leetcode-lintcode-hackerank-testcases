@@ -1,6 +1,9 @@
-package com.leetcode;
+package com.lintcode;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.HashSet;
+import java.util.Queue;
+import java.util.Set;
 
 /**
  * Created by shiyanghuang on 15/6/22.
