@@ -1,4 +1,4 @@
-package com.dataguise.Masking;
+package com.dataguess.Masking;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -18,7 +18,9 @@ public class AddressRecords {
             BufferedReader br = new BufferedReader(new InputStreamReader(in));
             while ((line = br.readLine()) != null) { // while loop begins here
                 String[] col = line.split(",");
-                records.add(new AddressRecord(col[0], col[1], col[2]));
+                if (col.length == 3) {
+                    records.add(new AddressRecord(col[0], col[1], col[2]));
+                }
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -50,6 +52,8 @@ public class AddressRecords {
     public ArrayList<AddressRecord> getRecords() {
         return this.records;
     }
+
+
     public static void main(String[] args) {
 
         String file = "/Users/shiyanghuang/Documents/Dataguise/us_postal_codes.csv";

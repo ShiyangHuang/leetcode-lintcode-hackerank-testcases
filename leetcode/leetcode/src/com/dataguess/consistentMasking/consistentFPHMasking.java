@@ -1,4 +1,4 @@
-package com.dataguise.consistentMasking;
+package com.dataguess.consistentMasking;
 
 import com.dataguise.util.Base26;
 

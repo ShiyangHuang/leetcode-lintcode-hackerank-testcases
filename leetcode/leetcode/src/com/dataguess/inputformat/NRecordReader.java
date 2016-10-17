@@ -1,4 +1,4 @@
-package com.dataguise.inputformat;
+package com.dataguess.inputformat;
 
 /**
  * Created by shiyanghuang on 16/7/19.

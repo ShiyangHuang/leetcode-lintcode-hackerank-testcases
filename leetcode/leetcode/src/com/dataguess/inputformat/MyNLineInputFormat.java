@@ -1,4 +1,4 @@
-package com.dataguise.inputformat;
+package com.dataguess.inputformat;
 
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;

@@ -1,4 +1,4 @@
-package com.dataguise.consistentMasking;
+package com.dataguess.consistentMasking;
 
 /**
  * Created by shiyanghuang on 16/8/31.

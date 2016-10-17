@@ -1,4 +1,4 @@
-package com.dataguise;
+package com.dataguess;
 
 import java.util.ArrayList;
 

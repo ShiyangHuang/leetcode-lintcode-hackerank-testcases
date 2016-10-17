@@ -1,4 +1,4 @@
-package com.dataguise.Masking;
+package com.dataguess.Masking;
 
 /**
  * Created by shiyanghuang on 16/6/17.

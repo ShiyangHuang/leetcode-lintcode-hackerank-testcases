@@ -1,4 +1,4 @@
-package com.dataguise;
+package com.dataguess;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
