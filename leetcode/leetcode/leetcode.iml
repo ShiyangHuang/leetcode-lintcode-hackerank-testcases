@@ -20,7 +20,7 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="gson-2.3.1" level="project" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$USER_HOME$/Documents/org-apache-commons-codec.jar!/" />
@@ -29,7 +29,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/Documents/Dataguise/memoryLeak/jar" />
@@ -39,6 +39,10 @@
         <jarDirectory url="file://$USER_HOME$/Documents/Dataguise/memoryLeak/jar" recursive="false" />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="hdpjar" level="project" />
+    <orderEntry type="library" name="Dglib" level="project" />
+    <orderEntry type="library" name="classLoaderJar" level="project" />
+    <orderEntry type="library" name="CustomMaskingInterface" level="project" />
+    <orderEntry type="library" name="CustomMasking" level="project" />
+    <orderEntry type="library" name="org.springframework.boot:spring-boot:1.1.1.RELEASE" level="project" />
   </component>
 </module>

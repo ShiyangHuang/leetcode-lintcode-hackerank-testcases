@@ -5,6 +5,9 @@ package com.testcases;
  */
 public class test {
     public static void main(String[] args) {
-        Thread thread = new Thread();
+
+        int x = 4 & 3;
+        System.out.print(x);
+
     }
 }

@@ -31,6 +31,8 @@ public class submitJobTest {
 
         public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
             String line = value.toString();
+            byte[] bytes = value.getBytes();
+            line = new String(bytes, "UTF-8");
             StringTokenizer tokenizer = new StringTokenizer(line);
             while (tokenizer.hasMoreTokens()) {
                 word.set(tokenizer.nextToken());

@@ -8,6 +8,22 @@ import java.util.List;
  */
 public class ArrayListTest {
     public static void main(String[] args) {
+        iterateArray();
+
+    }
+
+    public static void iterateArray() {
+        ArrayList<Integer> arr = new ArrayList<Integer>();
+        for (int i = 0; i < 10 ; ++i) {
+            arr.add(i);
+        }
+
+        for (int i : arr) {
+            System.out.println(i);
+        }
+    }
+
+    public void remove() {
         ArrayList<String> arrayList = new ArrayList<String>();
         for (int i = 0; i < 15; i++) {
             arrayList.add(i + "");
@@ -21,7 +37,6 @@ public class ArrayListTest {
         for (String str : array) {
             System.out.println(str);
         }
-
     }
 
     public static void removeDuplicate(List<String> array) {

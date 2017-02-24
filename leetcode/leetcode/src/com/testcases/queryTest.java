@@ -16,6 +16,7 @@ import java.util.Map;
  * Created by shiyanghuang on 15/12/21.
  */
 public class queryTest {
+
     public static void main(String[] args) {
         String query = "http://192.168.6.91:9099/eagle-service/rest/list?query=AlertDefinitionService[@dataSource=\"hdfsAuditLog\"%20and%20@site=\"Demo\"]{*}&pageSize=100";
         String url = "http://192.168.6.4:7000";
